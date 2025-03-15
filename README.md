@@ -6,9 +6,7 @@
 
 ## Overview  
 
-**112Lang** est un interpréteur minimaliste écrit en **C#**.  
-Il permet d'exécuter des scripts avec des **variables**, des **références**, des **expressions arithmétiques** et des **structures conditionnelles** *(à venir !)*.  
-
+**112lang is a simple interpretor wrote in c# aiming to be used for simple task**
 ---
 
 ## Features  
