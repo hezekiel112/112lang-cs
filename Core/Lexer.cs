@@ -25,14 +25,13 @@
         while (Position < Source.Length) {
             if (char.IsWhiteSpace(Current)) {
                 Next();
-
                 continue;
             }
 
+            // 🔹 Identifier les mots-clés et les littéraux
             if (char.IsLetter(Current)) {
                 string keyword = string.Empty;
 
-                #region LEXING KEYWORD
                 while (char.IsLetterOrDigit(Current)) {
                     keyword += Current;
                     Next();
@@ -43,60 +42,75 @@
                     case Code.KEYWORD_VAR:
                         _tokens.Add(new Token(keyword, ETokenKind.KEYWORD, Position));
                         break;
-
                     default:
                         _tokens.Add(new Token(keyword, ETokenKind.LITERAL, Position));
                         break;
                 }
-
                 continue;
-                #endregion
             }
 
-            #region LEXING OPERATOR 
-            if ("+-*/!&|".Contains(Current)) {
-                char op = Current;
-                char aheadOf = LookAhead();
+            // 🔹 Identifier les opérateurs
+            if ("+-*/()".Contains(Current)) {
+                _tokens.Add(new Token(Current.ToString(), ETokenKind.OPERATOR, Position));
                 Next();
+                continue;
+            }
 
-                string operatorValue = op.ToString();
-
-                if (op == '+' && aheadOf == '+') {
-                    operatorValue += aheadOf;
+            // 🔹 Identifier les nombres
+            if (char.IsDigit(Current)) {
+                string number = string.Empty;
+                while (char.IsDigit(Current) || Current == '.') {
+                    number += Current;
                     Next();
                 }
-
-                Console.WriteLine(operatorValue);
-                _tokens.Add(new Token(operatorValue, ETokenKind.OPERATOR, Position));
-
+                _tokens.Add(new Token(number, ETokenKind.DIGIT, Position));
                 continue;
             }
-            #endregion
 
-            #region LEXING VARIABLE
-            if ("%".Contains(Current)) {
-                Next();
-                string variable = string.Empty;
+            // 🔹 Identifier les expressions entre `% %`
+            if (Current == '%') {
+                Next(); // Passer le premier `%`
+                string expression = string.Empty;
+                List<Token> expressionTokens = new List<Token>();
 
                 while (Current != '%' && Current != '\0') {
-                    variable += Current;
-                    Next();
+                    if (char.IsDigit(Current)) {
+                        string number = "";
+                        while (char.IsDigit(Current)) {
+                            number += Current;
+                            Next();
+                        }
+                        expressionTokens.Add(new Token(number, ETokenKind.DIGIT, Position));
+                    }
+                    else if ("+-*/".Contains(Current)) {
+                        expressionTokens.Add(new Token(Current.ToString(), ETokenKind.OPERATOR, Position));
+                        Next();
+                    }
+                    else {
+                        // Si ce n'est pas un chiffre ni un opérateur, on considère que c'est du texte
+                        string text = "";
+                        while (Current != '%' && !"0123456789+-*/".Contains(Current) && Current != '\0') {
+                            text += Current;
+                            Next();
+                        }
+                        expressionTokens.Add(new Token(text, ETokenKind.LITERAL, Position));
+                    }
                 }
 
-                if (Current.Equals('%')) {
-                    Next();
-                    _tokens.Add(new Token(variable, ETokenKind.VARIABLE, Position));
+                if (Current == '%') {
+                    Next(); // Passer le second `%`
+                    foreach (var t in expressionTokens) {
+                        _tokens.Add(t);
+                    }
                 }
                 else {
-                    throw new Exception("missing % ending segment for variable declaration statement");
+                    throw new Exception("Erreur : expression entre % manquante de fermeture.");
                 }
-
                 continue;
             }
-            #endregion
 
-            #region LEXING REFERENCE
-            if ("[".Contains(Current)) {
+            // 🔹 Identifier les références entre `[ ]`
+            if (Current == '[') {
                 Next();
                 string reference = string.Empty;
 
@@ -105,17 +119,15 @@
                     Next();
                 }
 
-                if (Current.Equals(']')) {
+                if (Current == ']') {
                     Next();
                     _tokens.Add(new Token(reference, ETokenKind.REFERENCE, Position));
                 }
                 else {
-                    throw new Exception("missing ] ending segment for reference declaration statement");
+                    throw new Exception("Erreur : référence fermante `]` manquante.");
                 }
-
                 continue;
             }
-            #endregion
         }
 
         _tokens.Add(new Token(string.Empty, ETokenKind.EOF, Position));

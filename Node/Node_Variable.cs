@@ -1,5 +1,5 @@
 ﻿public sealed class Node_Variable : Node {
-    public string VariableValue {
+    public string? VariableValue {
         get;
     }
 
@@ -7,8 +7,17 @@
         get;
     }
 
-    public Node_Variable(string variableValue, string variableName, int position) : base(position) {
-        VariableValue = variableValue;
+    public Node? VariableExpression {
+        get;
+    }
+
+    public Node_Variable(string variableName, string variableValue, int position) : base(position) {
         VariableName = variableName;
+        VariableValue = variableValue;
+    }
+
+    public Node_Variable(string variableName, Node expression, int position) : base(position) {
+        VariableName = variableName;
+        VariableExpression = expression;
     }
 }
