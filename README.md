@@ -1,2 +1,31 @@
-# 112lang cs
- simple interpreter wrote in c#
+# 112Lang - Simple Interpreter in C#
+
+![Language](https://img.shields.io/badge/Language-C%23-blue.svg)  
+![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-orange)  
+![License](https://img.shields.io/badge/License-MIT-green)  
+
+## Overview  
+
+**112Lang** est un interpréteur minimaliste écrit en **C#**.  
+Il permet d'exécuter des scripts avec des **variables**, des **références**, des **expressions arithmétiques** et des **structures conditionnelles** *(à venir !)*.  
+
+---
+
+## Features  
+
+**Variables** (Stockage & affichage)  
+**Références** (`[VAR]` pour récupérer des valeurs)  
+**Lexer** (Reconnaissance : Opérateurs, Littéraux, Mots-clés, EOF)  
+**Parser** (Analyse syntaxique)  
+&nbsp;&nbsp;• `OSD` (Affichage avec références)  
+&nbsp;&nbsp;• Déclaration de variables `VAR`  
+**Interpreter** (Exécution du code)  
+&nbsp;&nbsp;• ~ **WIP** (Exceptions runtime manquantes)  
+
+## Todo
+
+**Repl** : compile code in runtime with ast output
+**Conditional structure** : if, else, ...
+**Array, List and Dictionnary**
+**Interpretor Error Code**
+**Move everything into a single binary to run code with a single 112lang.exe -run [codepath]**
