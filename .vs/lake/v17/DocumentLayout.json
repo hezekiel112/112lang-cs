@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\enzor\\source\\repos\\lake\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\code.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:code.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\lexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:lexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\node_osd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:node_osd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\iiterator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:iiterator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|c:\\users\\enzor\\source\\repos\\lake\\node_variable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5463727-094A-48CC-BD44-590BDDE57749}|lake.csproj|solutionrelative:node_variable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IIterator.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\IIterator.cs",
+              "RelativeDocumentMoniker": "IIterator.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\IIterator.cs",
+              "RelativeToolTip": "IIterator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T17:00:05.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Token.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\Token.cs",
+              "RelativeDocumentMoniker": "Token.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\Token.cs",
+              "RelativeToolTip": "Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:51:39.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Interpreter.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\Interpreter.cs",
+              "RelativeDocumentMoniker": "Interpreter.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\Interpreter.cs",
+              "RelativeToolTip": "Interpreter.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:47:34.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lexer.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\Lexer.cs",
+              "RelativeDocumentMoniker": "Lexer.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\Lexer.cs",
+              "RelativeToolTip": "Lexer.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAkwG8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:47:33.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Parser.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\Parser.cs",
+              "RelativeDocumentMoniker": "Parser.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\Parser.cs",
+              "RelativeToolTip": "Parser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:46:26.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Node_OSD.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\Node_OSD.cs",
+              "RelativeDocumentMoniker": "Node_OSD.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\Node_OSD.cs",
+              "RelativeToolTip": "Node_OSD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:33:34.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T12:52:56.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Code.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\Code.cs",
+              "RelativeDocumentMoniker": "Code.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\Code.cs",
+              "RelativeToolTip": "Code.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T15:48:34.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Node_Variable.cs",
+              "DocumentMoniker": "C:\\Users\\enzor\\source\\repos\\lake\\Node_Variable.cs",
+              "RelativeDocumentMoniker": "Node_Variable.cs",
+              "ToolTip": "C:\\Users\\enzor\\source\\repos\\lake\\Node_Variable.cs",
+              "RelativeToolTip": "Node_Variable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:59:41.597Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
